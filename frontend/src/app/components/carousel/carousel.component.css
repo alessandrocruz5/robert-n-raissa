@@ -1,0 +1,12 @@
+.img-style {
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(40%);
+}
+
+.carousel-container {
+  height: 40%;
+  width: 10%;
+}

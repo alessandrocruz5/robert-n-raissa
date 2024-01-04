@@ -16,23 +16,40 @@
   height: 100%;
 } */
 
-.carousel-container {
+ngb-carousel {
+  max-width: 700px;
+  margin: 50px auto;
+}
+ngb-carousel img {
   width: 100%;
-  overflow: hidden;
+  outline: none;
+}
+ngb-carousel {
+  width: inherit;
+  height: inherit;
+}
+.carousel-inner {
+  overflow: visible;
+}
+.carousel-item {
+  display: flex !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.2s ease-in-out, visibility 1.2s;
+  z-index: -1;
+}
+.carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.carousel-control-prev {
+  z-index: 20;
 }
 
-.carousel-slides {
-  display: flex;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+.carousel-control-next {
+  z-index: 20;
 }
-
-.carousel-slide {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: auto;
+.carousel-indicators {
+  z-index: 20;
 }

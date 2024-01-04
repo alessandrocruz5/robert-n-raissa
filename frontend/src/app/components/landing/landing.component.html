@@ -6,11 +6,3 @@
     [ngClass]="{ 'image-active': index === i }"
   />
 </div> -->
-
-<div class="carousel-container">
-  <div class="carousel-slides" #slidesContainer>
-    <div class="carousel-slide" *ngFor="let slide of slides; let i = index">
-      <img [src]="slide.url" [alt]="slide.alt" />
-    </div>
-  </div>
-</div>
