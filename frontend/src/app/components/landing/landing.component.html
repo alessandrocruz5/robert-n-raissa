@@ -1,0 +1,16 @@
+<!-- <div *ngIf="images && images.length > 0" class="carousel-container">
+  <img
+    *ngFor="let image of images; let i = index"
+    [src]="image.imageSrc"
+    [alt]="image.imageAlt"
+    [ngClass]="{ 'image-active': index === i }"
+  />
+</div> -->
+
+<div class="carousel-container">
+  <div class="carousel-slides" #slidesContainer>
+    <div class="carousel-slide" *ngFor="let slide of slides; let i = index">
+      <img [src]="slide.url" [alt]="slide.alt" />
+    </div>
+  </div>
+</div>

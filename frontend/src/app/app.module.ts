@@ -5,6 +5,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 
+import { CarouselModule } from 'primeng/carousel';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -15,8 +17,9 @@ import { LocationComponent } from './components/location/location.component';
 import { RegistryComponent } from './components/registry/registry.component';
 import { RsvpComponent } from './components/rsvp/rsvp.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LandingComponent } from './components/landing/landing.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegistryComponent,
     RsvpComponent,
     FooterComponent,
-    CarouselComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatMenuModule,
     MatToolbarModule,
     MatButtonModule,
+    CarouselModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
