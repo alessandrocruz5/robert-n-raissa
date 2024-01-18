@@ -19,7 +19,6 @@ export class CarouselComponent {
   ];
 
   slideConfig = {
-    centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -29,5 +28,6 @@ export class CarouselComponent {
     speed: 1000,
     fade: true,
     cssEase: 'linear',
+    arrows: false,
   };
 }

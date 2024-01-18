@@ -1,4 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: auto;
   background: #ffe8f1;
+}
+
+.welcome {
+  scroll-margin: 50px;
 }

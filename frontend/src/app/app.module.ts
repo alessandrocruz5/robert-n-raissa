@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 
 import { CarouselModule } from 'primeng/carousel';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingComponent } from './components/landing/landing.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     RsvpComponent,
     FooterComponent,
     LandingComponent,
+    SplashScreenComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -47,6 +50,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     CarouselModule,
     NgbModule,
     CarouselComponent,
+    NgImageSliderModule,
   ],
 })
 export class AppModule {}

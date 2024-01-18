@@ -10,23 +10,23 @@ export class AppComponent {
 
   images = [
     {
-      imageSrc: 'assets/images/1.jpg',
+      imageSrc: 'assets/images/1 hd.jpg',
       imageAlt: 'r&r1',
     },
     {
-      imageSrc: 'assets/images/2.jpg',
+      imageSrc: 'assets/images/2 hd.jpg',
       imageAlt: 'r&r2',
     },
     {
-      imageSrc: 'assets/images/3.jpg',
+      imageSrc: 'assets/images/3 hd.jpg',
       imageAlt: 'r&r3',
     },
     {
-      imageSrc: 'assets/images/4.jpg',
+      imageSrc: 'assets/images/4 hd.jpg',
       imageAlt: 'r&r4',
     },
     {
-      imageSrc: 'assets/images/5.jpg',
+      imageSrc: 'assets/images/5 hd.jpg',
       imageAlt: 'r&r5',
     },
   ];

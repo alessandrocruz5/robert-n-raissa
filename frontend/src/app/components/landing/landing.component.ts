@@ -25,44 +25,12 @@ interface carouselImage {
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css'],
 })
-export class LandingComponent implements AfterViewInit {
-  @Input() images: carouselImage[] = [];
-  @ViewChild('slidesContainer') slidesContainer: ElementRef;
-
+export class LandingComponent {
   slides = [
-    { url: 'assets/images/1.jpg', alt: 'Slide 1' },
-    { url: 'assets/images/2.jpg', alt: 'Slide 2' },
-    { url: 'assets/images/3.jpg', alt: 'Slide 3' },
-    { url: 'assets/images/4.jpg', alt: 'Slide 4' },
-    { url: 'assets/images/5.jpg', alt: 'Slide 5' },
+    { image: 'assets/images/1.jpg', thumbImage: 'assets/images/1.jpg' },
+    { image: 'assets/images/2.jpg', thumbImage: 'assets/images/2.jpg' },
+    { image: 'assets/images/3.jpg', thumbImage: 'assets/images/3.jpg' },
+    { image: 'assets/images/4.jpg', thumbImage: 'assets/images/4.jpg' },
+    { image: 'assets/images/5.jpg', thumbImage: 'assets/images/5.jpg' },
   ];
-
-  private currIndex = 0;
-
-  ngAfterViewInit(): void {
-    this.animateCarousel();
-  }
-
-  animateCarousel() {
-    const slidesContainer = this.slidesContainer.nativeElement;
-    const slidesWidth = slidesContainer.scrollWidth / this.slides.length;
-
-    fromEvent(slidesContainer, 'scroll')
-      .pipe(
-        debounceTime(100),
-        map(() => slidesContainer.scrollLeft),
-        map((scrollLeft) => Math.round(scrollLeft / slidesWidth)),
-        distinctUntilChanged()
-      )
-      .subscribe((index) => {
-        this.currIndex = index;
-        this.slideTo(index);
-      });
-  }
-
-  slideTo(index: number) {
-    const slidesContainer = this.slidesContainer.nativeElement;
-    const slideWidth = slidesContainer.scrollWidth / this.slides.length;
-    slidesContainer.scrollTo({ left: index * slideWidth, behavior: 'smooth' });
-  }
 }
