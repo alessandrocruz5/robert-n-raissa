@@ -25,6 +25,7 @@ export class RsvpComponent {
       // nPlusone: [''],
       p1FirstName: [''],
       p1LastName: [''],
+      attending: [''],
     });
   }
 

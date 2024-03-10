@@ -10,6 +10,7 @@ const formSchema = new mongoose.Schema({
   plusOne: String,
   p1FirstName: String,
   p1LastName: String,
+  attending: { type: String, required: true },
 });
 
 const Form = mongoose.model("Form", formSchema);

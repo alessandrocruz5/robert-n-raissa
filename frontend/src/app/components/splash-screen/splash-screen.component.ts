@@ -34,18 +34,12 @@ export class SplashScreenComponent implements OnInit {
   showSplash: boolean = true;
   fadeState = 'visible';
 
-  // ngOnInit(): void {
-  //   setTimeout(() => {
-  //     this.windowWidth = '-' + window.innerWidth + 'px';
-  //     setTimeout(() => {
-  //       this.showSplash = !this.showSplash;
-  //     }, 1000);
-  //   }, 1500);
-  // }
-
   ngOnInit(): void {
     setTimeout(() => {
       this.fadeState = 'hidden';
+      setTimeout(() => {
+        document.getElementById('splash-screen-container')?.remove();
+      }, 800);
     }, 2000);
   }
 }
