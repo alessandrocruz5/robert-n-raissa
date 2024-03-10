@@ -17,9 +17,7 @@ a {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-right: 10rem;
-  margin-left: 10rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .link {

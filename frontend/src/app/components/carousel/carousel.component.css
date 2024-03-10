@@ -11,6 +11,15 @@
   width: 100%;
 }
 
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide img {
+  width: 100%;
+}
+
 .img-style {
   width: 1920px;
   height: 950px;
@@ -19,15 +28,14 @@
   filter: brightness(40%);
 }
 
-.carousel-container {
+/* .carousel-container {
   width: 100%;
   overflow: hidden;
-}
+} */
 
 .carousel-title-container {
   width: 100%;
 }
-
 .carousel-title {
   position: absolute;
   top: 50%;
