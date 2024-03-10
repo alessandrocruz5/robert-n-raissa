@@ -29,5 +29,37 @@ export class CarouselComponent {
     fade: true,
     cssEase: 'linear',
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          pauseOnHover: false,
+          autoplaySpeed: 3000,
+          infinite: true,
+          speed: 1000,
+          fade: true,
+          cssEase: 'linear',
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          pauseOnHover: false,
+          autoplaySpeed: 3000,
+          infinite: true,
+          speed: 1000,
+          fade: true,
+          cssEase: 'linear',
+          arrows: false,
+        },
+      },
+    ],
   };
 }

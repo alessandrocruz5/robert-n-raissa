@@ -1,7 +1,6 @@
 <div
   class="splash-screen-container"
-  [ngStyle]="{ top: windowWidth }"
-  *ngIf="showSplash"
+  [ngStyle]="{ opacity: fadeState === 'visible' ? 1 : 0 }"
 >
   <div class="title-container">
     <h1>Robert & Raissa</h1>
