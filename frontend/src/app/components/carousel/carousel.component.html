@@ -5,10 +5,9 @@
     [config]="slideConfig"
   >
     <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-      <div class="carousel-title-container">
-        <h1 class="carousel-title">Robert & Raissa</h1>
-      </div>
+      <h1 class="carousel-title">Robert & Raissa</h1>
       <img src="{{ slide.img }}" alt="" class="img-style" />
     </div>
   </ngx-slick-carousel>
 </div>
+<!-- <ng-image-slider [images]="imageObject" #nav></ng-image-slider> -->

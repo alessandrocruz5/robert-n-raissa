@@ -12,6 +12,19 @@
   height: 600px;
 } */
 
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide {
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+}
+
 .img-style {
   width: 1920px;
   height: 950px;
@@ -20,16 +33,16 @@
   filter: brightness(40%);
 }
 
-.carousel-container {
+/* .carousel-container {
   width: 100%;
   overflow: hidden;
-}
+} */
 
 .carousel-title-container {
   width: 100%;
 }
 
-.carousel-title {
+/* .carousel-title {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -42,4 +55,14 @@
   font-size: 12rem;
   width: 100%;
   color: #e1c565;
+}*/
+
+.carousel-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  font-family: Gustatory Delight;
+  font-size: 10vw;
 }
