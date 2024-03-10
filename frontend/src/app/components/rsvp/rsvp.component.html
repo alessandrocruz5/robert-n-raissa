@@ -31,8 +31,11 @@
             <textarea formControlName="dietaryRestrictions" matInput></textarea>
           </mat-form-field>
           <mat-checkbox formControlName="plusOne" (change)="toggle()"
-            >Plus one</mat-checkbox
+            >Plus one?</mat-checkbox
           >
+          <label>Will you be attending?</label>
+          <mat-checkbox>Yes</mat-checkbox>
+          <mat-checkbox>No</mat-checkbox>
           <!-- <section>
             <label>Plus one?</label>
             <mat-checkbox formControlName="yPlusOne" (change)="toggle()"

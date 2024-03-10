@@ -11,6 +11,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CarouselModule } from 'primeng/carousel';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -60,6 +61,7 @@ import { SplashScreenComponent } from './components/splash-screen/splash-screen.
     MatCheckboxModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
 })
 export class AppModule {}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-rsvp',
@@ -8,29 +9,42 @@ import { FormBuilder } from '@angular/forms';
 })
 export class RsvpComponent {
   isHidden = true;
+  rsvpForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
-
-  rsvpForm = this.fb.group({
-    _id: [null],
-    firstName: [''],
-    lastName: [''],
-    phoneNo: [''],
-    email: [''],
-    address: [''],
-    dietaryRestrictions: [''],
-    plusOne: [''],
-    // yPlusOne: [''],
-    // nPlusone: [''],
-    p1FirstName: [''],
-    p1LastName: [''],
-  });
+  constructor(private fb: FormBuilder, private http: HttpClient) {
+    this.rsvpForm = this.fb.group({
+      _id: [null],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      phoneNo: ['', Validators.required],
+      email: ['', Validators.required, Validators.email],
+      address: ['', Validators.required],
+      dietaryRestrictions: [''],
+      plusOne: [''],
+      // yPlusOne: [''],
+      // nPlusone: [''],
+      p1FirstName: [''],
+      p1LastName: [''],
+    });
+  }
 
   toggle() {
     this.isHidden = !this.isHidden;
   }
 
   onSubmit() {
-    console.log(this.rsvpForm.value);
+    const formData = this.rsvpForm.value;
+
+    this.http.post('http://localhost:1217/api/newForm', formData).subscribe(
+      (res) => {
+        console.log('RSVP Submitted!', res);
+      },
+      (err) => {
+        console.error(err);
+      }
+    );
+
+    this.rsvpForm.reset();
+    alert('Thank you for submitting your RSVP!');
   }
 }

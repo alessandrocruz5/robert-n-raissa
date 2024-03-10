@@ -52,3 +52,7 @@ button {
   width: 10%;
   border-radius: 25px;
 }
+
+label {
+  color: black;
+}
