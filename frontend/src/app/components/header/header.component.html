@@ -1,0 +1,43 @@
+<!-- <mat-toolbar color="primary">
+  <div class="section">
+    <button><a href="#">WELCOME</a></button>
+    <button><a href="#">ENTOURAGE</a></button>
+    <button><a href="#">DRESS CODE</a></button>
+    <button><a href="#">LOCATION</a></button>
+    <button><a href="#">REGISTRY</a></button>
+    <button><a href="#">RSVP</a></button>
+    <button><a href="#">CONTACT</a></button>
+  </div>
+</mat-toolbar> -->
+
+<!-- <nav class="navbar" [class.sticky]="isSticky">
+  <div class="section">
+    <button><a href="#">WELCOME</a></button>
+    <button><a href="#">ENTOURAGE</a></button>
+    <button><a href="#">DRESS CODE</a></button>
+    <button><a href="#">LOCATION</a></button>
+    <button><a href="#">REGISTRY</a></button>
+    <button><a href="#">RSVP</a></button>
+    <button><a href="#">CONTACT</a></button>
+  </div>
+</nav> -->
+
+<nav class="navbar">
+  <div class="section">
+    <button (click)="toWelcome()"><a routerLink="/welcome">WELCOME</a></button>
+    <button (click)="toEntourage()">
+      <a routerLink="/entourage">ENTOURAGE</a>
+    </button>
+    <button (click)="toDressCode()">
+      <a routerLink="/dress-code">DRESS CODE</a>
+    </button>
+    <button (click)="toLocation()">
+      <a routerLink="/location">LOCATION</a>
+    </button>
+    <button (click)="toRegistry()">
+      <a routerLink="/registry">REGISTRY</a>
+    </button>
+    <button (click)="toRSVP()"><a routerLink="/rsvp-form">RSVP</a></button>
+    <button (click)="toContact()"><a routerLink="/contact">CONTACT</a></button>
+  </div>
+</nav>

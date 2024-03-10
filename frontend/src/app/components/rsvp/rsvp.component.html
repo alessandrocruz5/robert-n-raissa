@@ -1,0 +1,65 @@
+<div class="section-container">
+  <div class="title-container">
+    <h1>RSVP Form</h1>
+  </div>
+  <div class="form-container">
+    <div class="form-content-container">
+      <form [formGroup]="rsvpForm" (submit)="onSubmit()">
+        <div class="form-fields-container">
+          <label>Will you be attending?</label>
+          <div class="attending-container">
+            <mat-checkbox>Yes</mat-checkbox>
+            <mat-checkbox>No</mat-checkbox>
+          </div>
+          <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input formControlName="firstName" matInput required />
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input formControlName="lastName" matInput required />
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Phone Number</mat-label>
+            <input formControlName="phoneNo" matInput type="number" required />
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input formControlName="email" matInput type="email" required />
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Address</mat-label>
+            <input formControlName="address" matInput required />
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Dietary Restrictions</mat-label>
+            <textarea formControlName="dietaryRestrictions" matInput></textarea>
+          </mat-form-field>
+          <mat-checkbox formControlName="plusOne" (change)="toggle()"
+            >Plus one?</mat-checkbox
+          >
+          <!-- <section>
+            <label>Plus one?</label>
+            <mat-checkbox formControlName="yPlusOne" (change)="toggle()"
+              >Yes</mat-checkbox
+            >
+            <mat-checkbox formControlName="nPlusOne">No</mat-checkbox>
+          </section> -->
+        </div>
+        <div [hidden]="isHidden" class="plus-one-fields">
+          <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input formControlName="p1FirstName" matInput />
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input formControlName="p1LastName" matInput />
+          </mat-form-field>
+        </div>
+        <div class="submit-button">
+          <button mat-button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

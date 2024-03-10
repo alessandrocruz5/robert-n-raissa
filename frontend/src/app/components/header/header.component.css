@@ -1,0 +1,54 @@
+button {
+  border: none;
+  background: #ffe8f1;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #e1c565;
+  font-family: "Playfair Display";
+  font-size: 1.3rem;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+}
+
+.link {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.navbar {
+  background-color: #ffe8f1;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffe8f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+} */
