@@ -6,11 +6,10 @@
     <div class="form-content-container">
       <form [formGroup]="rsvpForm" (submit)="onSubmit()">
         <div class="form-fields-container">
-          <label>Will you be attending?</label>
-          <div class="attending-container">
-            <mat-checkbox>Yes</mat-checkbox>
-            <mat-checkbox>No</mat-checkbox>
-          </div>
+          <mat-form-field>
+            <mat-label>Will you be attending?</mat-label>
+            <input formControlName="attending" matInput required />
+          </mat-form-field>
           <mat-form-field>
             <mat-label>First Name</mat-label>
             <input formControlName="firstName" matInput required />

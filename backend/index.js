@@ -34,6 +34,7 @@ const rsvpSchema = new Schema({
   plusOne: Boolean,
   p1FirstName: String,
   p1LastName: String,
+  attending: String,
 });
 
 app.use("/api", require("./routes/routes"));
