@@ -8,7 +8,11 @@
         <div class="form-fields-container">
           <mat-form-field>
             <mat-label>Will you be attending?</mat-label>
-            <input formControlName="attending" matInput required />
+            <mat-select>
+              <mat-option *ngFor="let option of options" [value]="option.value">
+                {{ option.viewValue }}
+              </mat-option>
+            </mat-select>
           </mat-form-field>
           <mat-form-field>
             <mat-label>First Name</mat-label>
@@ -34,9 +38,9 @@
             <mat-label>Dietary Restrictions</mat-label>
             <textarea formControlName="dietaryRestrictions" matInput></textarea>
           </mat-form-field>
-          <mat-checkbox formControlName="plusOne" (change)="toggle()"
+          <!-- <mat-checkbox formControlName="plusOne" (change)="toggle()"
             >Plus one?</mat-checkbox
-          >
+          > -->
           <!-- <section>
             <label>Plus one?</label>
             <mat-checkbox formControlName="yPlusOne" (change)="toggle()"
@@ -45,7 +49,7 @@
             <mat-checkbox formControlName="nPlusOne">No</mat-checkbox>
           </section> -->
         </div>
-        <div [hidden]="isHidden" class="plus-one-fields">
+        <!-- <div [hidden]="isHidden" class="plus-one-fields">
           <mat-form-field>
             <mat-label>First Name</mat-label>
             <input formControlName="p1FirstName" matInput />
@@ -54,7 +58,7 @@
             <mat-label>Last Name</mat-label>
             <input formControlName="p1LastName" matInput />
           </mat-form-field>
-        </div>
+        </div> -->
         <div class="submit-button">
           <button mat-button type="submit">Submit</button>
         </div>

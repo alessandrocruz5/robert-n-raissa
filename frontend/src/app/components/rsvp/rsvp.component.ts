@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
+interface Option {
+  value: string;
+  viewValue: string;
+}
+
 @Component({
   selector: 'app-rsvp',
   templateUrl: './rsvp.component.html',
@@ -10,6 +15,21 @@ import { HttpClient } from '@angular/common/http';
 export class RsvpComponent {
   isHidden = true;
   rsvpForm: FormGroup;
+
+  options: Option[] = [
+    {
+      value: 'yes',
+      viewValue: 'Yes',
+    },
+    {
+      value: 'no',
+      viewValue: 'No',
+    },
+    {
+      value: 'maybe',
+      viewValue: 'Maybe',
+    },
+  ];
 
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.rsvpForm = this.fb.group({
