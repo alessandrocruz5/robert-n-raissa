@@ -36,14 +36,25 @@ export class RsvpComponent {
   onSubmit() {
     const formData = this.rsvpForm.value;
 
-    this.http.post('http://localhost:1217/api/newForm', formData).subscribe(
-      (res) => {
-        console.log('RSVP Submitted!', res);
-      },
-      (err) => {
-        console.error(err);
-      }
-    );
+    // this.http.post('http://localhost:1217/api/newForm', formData).subscribe(
+    //   (res) => {
+    //     console.log('RSVP Submitted!', res);
+    //   },
+    //   (err) => {
+    //     console.error(err);
+    //   }
+    // );
+
+    this.http
+      .post('https://robert-n-raissa.onrender.com/api/newForm', formData)
+      .subscribe(
+        (res) => {
+          console.log('RSVP Submitted!', res);
+        },
+        (err) => {
+          console.error(err);
+        }
+      );
 
     this.rsvpForm.reset();
     alert('Thank you for submitting your RSVP!');
