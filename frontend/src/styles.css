@@ -38,7 +38,7 @@ body {
 
 /* Apply the light theme styles to Angular Material components */
 body.mat-light-theme {
-  --background: #ffffff;
+  --background: #eaeaea;
   --text: #000000;
 }
 
