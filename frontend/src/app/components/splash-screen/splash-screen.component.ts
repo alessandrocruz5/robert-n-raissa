@@ -40,6 +40,6 @@ export class SplashScreenComponent implements OnInit {
       setTimeout(() => {
         document.getElementById('splash-screen-container')?.remove();
       }, 800);
-    }, 2000);
+    }, 1500);
   }
 }
