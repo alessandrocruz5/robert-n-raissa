@@ -6,11 +6,13 @@
 .content-container-1 {
   width: 45%;
   margin-right: 5rem;
+  z-index: 10;
 }
 
 .content-container-2 {
   width: 55%;
   margin-left: 5rem;
+  z-index: 10;
 }
 
 .image-container {
@@ -35,6 +37,7 @@
   font-family: "Playfair Display";
   margin: 0;
   font-size: 4vw;
+  color: #e1c565;
 }
 
 .message-container {
@@ -48,4 +51,5 @@
   font-size: 1.5vw;
   margin: 0;
   line-height: 1.5;
+  color: #e1c565;
 }

@@ -6,16 +6,19 @@
 .content-container-1 {
   width: 65%;
   margin-right: 5rem;
+  z-index: 10;
 }
 
 .content-container-2 {
   width: 35%;
   margin-left: 5rem;
+  z-index: 10;
 }
 
 .title-container {
   width: 100%;
   position: sticky;
+  color: #e1c565;
   top: 50%;
   transform: translate(0, -50%);
 }

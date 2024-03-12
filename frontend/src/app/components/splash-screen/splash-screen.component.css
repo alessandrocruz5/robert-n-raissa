@@ -19,7 +19,8 @@
   font-family: "Gustatory Delight";
   font-size: 10vw;
   position: absolute;
-  top: 51%;
+  top: 52%;
   left: 50%;
+  color: #e1c565;
   transform: translate(-50%, -50%);
 }

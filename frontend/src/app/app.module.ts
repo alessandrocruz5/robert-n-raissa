@@ -28,6 +28,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
+import { BackgroundComponent } from './components/background/background.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { SplashScreenComponent } from './components/splash-screen/splash-screen.
     FooterComponent,
     LandingComponent,
     SplashScreenComponent,
+    BackgroundComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
