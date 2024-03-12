@@ -33,10 +33,6 @@
   padding-bottom: 5rem;
 }
 
-mat-form-field {
-  color: #eaeaea;
-}
-
 .plus-one-fields {
   display: flex;
   flex-direction: column;
@@ -45,6 +41,11 @@ mat-form-field {
 
 mat-form-field {
   width: 60%;
+}
+
+.mat-light {
+  background-color: white;
+  color: #fff;
 }
 
 .submit-button {

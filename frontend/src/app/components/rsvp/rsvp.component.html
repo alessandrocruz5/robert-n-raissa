@@ -9,7 +9,11 @@
           <mat-form-field>
             <mat-label>Will you be attending?</mat-label>
             <mat-select>
-              <mat-option *ngFor="let option of options" [value]="option.value">
+              <mat-option
+                color="light"
+                *ngFor="let option of options"
+                [value]="option.value"
+              >
                 {{ option.viewValue }}
               </mat-option>
             </mat-select>

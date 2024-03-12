@@ -25,10 +25,6 @@ export class RsvpComponent {
       value: 'no',
       viewValue: 'No',
     },
-    {
-      value: 'maybe',
-      viewValue: 'Maybe',
-    },
   ];
 
   constructor(private fb: FormBuilder, private http: HttpClient) {
