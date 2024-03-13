@@ -15,6 +15,7 @@ interface Option {
 export class RsvpComponent {
   isHidden = true;
   rsvpForm: FormGroup;
+  selectedOption: string = null;
 
   options: Option[] = [
     {
@@ -62,7 +63,7 @@ export class RsvpComponent {
     // );
 
     this.http
-      .post('https://robert-n-raissa.onrender.com/api/newForm', formData)
+      .post('https://tough-crab-turtleneck.cyclic.app/api/newForm', formData)
       .subscribe(
         (res) => {
           console.log('RSVP Submitted!', res);
@@ -73,6 +74,7 @@ export class RsvpComponent {
       );
 
     this.rsvpForm.reset();
+    this.selectedOption = null;
     alert('Thank you for submitting your RSVP!');
   }
 }

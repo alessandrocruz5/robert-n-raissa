@@ -33,3 +33,13 @@
   height: 70rem;
   background-color: white;
 }
+
+.sub-title-container h2 {
+  color: #e1c565;
+  font-family: "Playfair Display";
+  text-decoration: underline;
+}
+
+.maps-container-1 {
+  padding-bottom: 3em;
+}

@@ -7,7 +7,7 @@
 .left-image {
   position: fixed;
   z-index: -1;
-  transform: rotate(15deg);
+  transform: rotate(60deg);
   bottom: 0;
 }
 
@@ -21,7 +21,7 @@
   top: 0;
   position: fixed;
   z-index: -1;
-  transform: rotate(180deg);
+  transform: rotate(240deg);
 }
 
 .right-image img {
