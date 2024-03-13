@@ -16,10 +16,10 @@
 }
 
 .title-container h1 {
-  font-family: "Gustatory Delight";
-  font-size: 10vw;
+  font-family: "Sacramento", cursive;
+  font-size: 8vw;
   position: absolute;
-  top: 52%;
+  top: 50%;
   left: 50%;
   color: #e1c565;
   transform: translate(-50%, -50%);

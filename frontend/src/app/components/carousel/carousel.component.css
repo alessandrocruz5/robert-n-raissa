@@ -41,8 +41,8 @@
   top: 50%;
   left: 50%;
   color: #e1c565;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
   z-index: 1000;
-  font-family: Gustatory Delight;
-  font-size: 10vw;
+  font-family: "Sacramento", cursive;
+  font-size: 8vw;
 }

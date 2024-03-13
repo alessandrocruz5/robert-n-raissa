@@ -10,6 +10,26 @@
   src: url(/frontend/src/assets/GustatoryDelightRegular-rgX3L.ttf);
 }
 
+@font-face {
+  font-family: "Sacarment", cursive;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+}
+
+@font-face {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+}
+
+.sacramento-regular {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
