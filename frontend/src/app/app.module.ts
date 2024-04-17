@@ -8,6 +8,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+
+import { NgHeroiconsModule } from '@dimaslz/ng-heroicons';
 
 import { CarouselModule } from 'primeng/carousel';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -64,6 +67,8 @@ import { BackgroundComponent } from './components/background/background.componen
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgHeroiconsModule,
+    MatIconModule,
   ],
 })
 export class AppModule {}

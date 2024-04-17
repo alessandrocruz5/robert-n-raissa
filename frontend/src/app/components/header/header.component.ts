@@ -10,9 +10,22 @@ export class HeaderComponent {
 
   isSticky: boolean = false;
 
+  menuValue: boolean = false;
+  menuIcon: string = 'bi bi-list';
+
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.isSticky = window.scrollY > 0.1;
+  }
+
+  toggleMenu() {
+    this.menuValue = !this.menuValue;
+    this.menuIcon = this.menuValue ? 'bi bi-x' : 'bi bi-list';
+  }
+
+  closeMenu() {
+    this.menuValue = false;
+    this.menuIcon = 'bi bi-list';
   }
 
   toWelcome() {

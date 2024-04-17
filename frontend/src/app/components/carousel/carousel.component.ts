@@ -11,12 +11,13 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 })
 export class CarouselComponent {
   slides = [
-    { img: 'assets/images/1.jpg' },
-    { img: 'assets/images/2.jpg' },
-    { img: 'assets/images/3.jpg' },
-    { img: 'assets/images/4.jpg' },
-    { img: 'assets/images/5.jpg' },
+    { img: 'assets/images/1 hd.jpg' },
+    { img: 'assets/images/2 hd.jpg' },
+    { img: 'assets/images/3 hd.jpg' },
+    { img: 'assets/images/4 hd.jpg' },
   ];
+
+  // { img: 'assets/images/5 hd.jpg' },
 
   slideConfig = {
     slidesToShow: 1,
@@ -29,6 +30,7 @@ export class CarouselComponent {
     fade: true,
     cssEase: 'linear',
     arrows: false,
+    lazyLoad: 'ondemand',
     responsive: [
       {
         breakpoint: 1024,

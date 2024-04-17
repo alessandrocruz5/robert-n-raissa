@@ -1,29 +1,12 @@
-<!-- <mat-toolbar color="primary">
-  <div class="section">
-    <button><a href="#">WELCOME</a></button>
-    <button><a href="#">ENTOURAGE</a></button>
-    <button><a href="#">DRESS CODE</a></button>
-    <button><a href="#">LOCATION</a></button>
-    <button><a href="#">REGISTRY</a></button>
-    <button><a href="#">RSVP</a></button>
-    <button><a href="#">CONTACT</a></button>
+<!-- <nav class="navbar">
+  <div class="menu-container">
+    <button (click)="toggleMenu()">
+      <mat-icon [ngStyle]="{ color: '#e1c565', transform: 'scale(1.5)' }">{{
+        isMenuOpen ? "clear" : "view_headline"
+      }}</mat-icon>
+    </button>
   </div>
-</mat-toolbar> -->
-
-<!-- <nav class="navbar" [class.sticky]="isSticky">
-  <div class="section">
-    <button><a href="#">WELCOME</a></button>
-    <button><a href="#">ENTOURAGE</a></button>
-    <button><a href="#">DRESS CODE</a></button>
-    <button><a href="#">LOCATION</a></button>
-    <button><a href="#">REGISTRY</a></button>
-    <button><a href="#">RSVP</a></button>
-    <button><a href="#">CONTACT</a></button>
-  </div>
-</nav> -->
-
-<nav class="navbar">
-  <div class="section">
+  <div class="section" [class.is-open]="isMenuOpen">
     <button (click)="toWelcome()"><a routerLink="/welcome">WELCOME</a></button>
     <button (click)="toEntourage()">
       <a routerLink="/entourage">ENTOURAGE</a>
@@ -40,4 +23,62 @@
     <button (click)="toRSVP()"><a routerLink="/rsvp-form">RSVP</a></button>
     <button (click)="toContact()"><a routerLink="/contact">CONTACT</a></button>
   </div>
-</nav>
+</nav> -->
+
+<!-- <nav class="navbar">
+  <ul>
+    <li class="burger" (click)="toggleMenu()">
+      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+    </li>
+    <li class="menu" [class.is-open]="isMenuOpen">
+      <button class="menu-item" (click)="toWelcome()">
+        <a routerLink="/welcome">WELCOME</a>
+      </button>
+      <button class="menu-item" (click)="toEntourage()">
+        <a routerLink="/entourage">ENTOURAGE</a>
+      </button>
+      <button class="menu-item" (click)="toDressCode()">
+        <a routerLink="/dress-code">DRESS CODE</a>
+      </button>
+      <button class="menu-item" (click)="toLocation()">
+        <a routerLink="/location">LOCATION</a>
+      </button>
+      <button class="menu-item" (click)="toRegistry()">
+        <a routerLink="/registry">REGISTRY</a>
+      </button>
+      <button class="menu-item" (click)="toRSVP()">
+        <a routerLink="/rsvp-form">RSVP</a>
+      </button>
+      <button class="menu-item" (click)="toContact()">
+        <a routerLink="/contact">CONTACT</a>
+      </button>
+    </li>
+  </ul>
+</nav> -->
+<header>
+  <div class="navbar-container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3">
+        <div class="logo-container">
+          <img src="" alt="Robert & Raissa" class="logo" />
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+        <div class="menu-icon">
+          <i class="{{ menuIcon }}" (click)="toggleMenu()"></i>
+        </div>
+        <div class="desktop-menu" [class.mobile-menu]="menuValue">
+          <ul>
+            <li (click)="closeMenu()">Welcome</li>
+            <li (click)="closeMenu()">Entourage</li>
+            <li (click)="closeMenu()">Dress Code</li>
+            <li (click)="closeMenu()">Location</li>
+            <li (click)="closeMenu()">Registry</li>
+            <li (click)="closeMenu()">RSVP</li>
+            <li (click)="closeMenu()">Contact</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

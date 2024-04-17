@@ -1,26 +1,29 @@
 #splash-screen-container {
   background: #ffe8f1;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 50%;
+  height: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   transition: opacity 1s;
   opacity: 1;
   z-index: 999;
 }
 
-.title-container h1 {
-  font-family: "Sacramento", cursive;
-  font-size: 8vw;
+.title-container {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #e1c565;
   transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 8vw;
+  color: #e1c565;
 }
