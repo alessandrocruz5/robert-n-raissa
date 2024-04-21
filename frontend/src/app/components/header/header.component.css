@@ -69,19 +69,26 @@ a {
 
 header {
   padding: 1.5rem;
-  background: #ffe8f1;
+  /* background: #e7a4be; */
+  background-color: transparent;
+  transition: background-color 0.3s ease;
   position: fixed;
+  /* top: -2rem;
+  padding-top: 2rem; */
   z-index: 100;
   width: 100%;
 }
 
+header.hide-nav {
+  background-color: #e7a4be;
+}
+
 .navbar-container {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  height: 3rem;
 }
 
 .desktop-menu {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .desktop-menu ul {
@@ -91,13 +98,14 @@ header {
 
 .desktop-menu ul li {
   list-style-type: none;
-  color: #e1c565;
+  color: white;
   display: inline-block;
   font-size: 1em;
   font-weight: bold;
-  margin-left: 1rem;
+  padding-right: 1.5%;
   font-family: "DM Serif Display", serif;
   text-transform: uppercase;
+  align-items: center;
 }
 
 .desktop-menu ul li:hover {
@@ -110,15 +118,15 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 128px) and (max-width: 1024px) {
-  header {
+@media screen and (max-width: 1119.98px) {
+  /* header {
     padding: 0.3rem;
   }
 
   .navbar-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
+    margin-left: 1rem;
+    margin-right: 1rem;
+  } */
 
   .desktop-menu {
     position: fixed;
@@ -140,13 +148,53 @@ header {
 
   .menu-icon {
     display: block;
-    color: #e1c565;
+    color: white;
     font-size: 40px;
-    padding: 10px;
+    padding: 0.1rem;
   }
 
   .mobile-menu {
     right: 0;
     transition: 0.4s ease-in-out;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    header {
+      padding: 0.3rem;
+    }
+
+    .navbar-container {
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+    }
+
+    .desktop-menu {
+      top: 3.5rem;
+    }
+
+    .mobile-menu {
+      right: 0;
+      transition: 0.4s ease-in-out;
+    }
+  }
+
+  @media only screen and (max-width: 499.98px) {
+    header {
+      padding: 0.3rem;
+    }
+
+    .desktop-menu {
+      top: 3rem;
+    }
+
+    .navbar-container {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    .mobile-menu {
+      right: 0;
+      transition: 0.4s ease-in-out;
+    }
   }
 }

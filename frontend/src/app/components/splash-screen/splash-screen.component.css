@@ -27,3 +27,10 @@ h1 {
   font-size: 8vw;
   color: #e1c565;
 }
+
+@media screen and (max-width: 479.98px) {
+  h1 {
+    font-size: 15vw;
+    text-align: center;
+  }
+}

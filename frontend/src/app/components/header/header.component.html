@@ -56,11 +56,11 @@
   </ul>
 </nav> -->
 <header>
-  <div class="navbar-container">
+  <div id="navbar" class="navbar-container">
     <div class="row">
       <div class="col-md-3 col-sm-3 col-3">
         <div class="logo-container">
-          <img src="" alt="Robert & Raissa" class="logo" />
+          <img src="" alt="R&R" class="logo" />
         </div>
       </div>
       <div class="col-md-9 col-sm-9 col-9 text-end">
@@ -69,13 +69,13 @@
         </div>
         <div class="desktop-menu" [class.mobile-menu]="menuValue">
           <ul>
-            <li (click)="closeMenu()">Welcome</li>
-            <li (click)="closeMenu()">Entourage</li>
-            <li (click)="closeMenu()">Dress Code</li>
-            <li (click)="closeMenu()">Location</li>
-            <li (click)="closeMenu()">Registry</li>
-            <li (click)="closeMenu()">RSVP</li>
-            <li (click)="closeMenu()">Contact</li>
+            <li (click)="closeMenu(); toWelcome()">Welcome</li>
+            <li (click)="closeMenu(); toEntourage()">Entourage</li>
+            <li (click)="closeMenu(); toDressCode()">Dress Code</li>
+            <li (click)="closeMenu(); toLocation()">Location</li>
+            <li (click)="closeMenu(); toRegistry()">Registry</li>
+            <li (click)="closeMenu(); toRSVP()">RSVP</li>
+            <li (click)="closeMenu(); toContact()">Contact</li>
           </ul>
         </div>
       </div>

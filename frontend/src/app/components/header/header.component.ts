@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,14 +8,26 @@ import { Component, HostListener } from '@angular/core';
 export class HeaderComponent {
   linkColor = '#E1C565';
 
+  scrollTop = 0;
+  scrollOffset = 1000;
   isSticky: boolean = false;
 
   menuValue: boolean = false;
   menuIcon: string = 'bi bi-list';
 
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    this.isSticky = window.scrollY > 0.1;
+  yOffset = -10;
+
+  @ViewChild('entourage') entourage: ElementRef;
+
+  constructor(private el: ElementRef) {}
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const dynamicOffset = this.scrollOffset - window.innerHeight * 0.5;
+
+    this.isSticky =
+      (window.scrollY || document.documentElement.scrollTop || 0) >
+      dynamicOffset;
   }
 
   toggleMenu() {
