@@ -1,0 +1,69 @@
+.section-container {
+  padding: 8rem;
+  display: flex;
+}
+
+.content-container {
+  padding-right: 3rem;
+  width: 60%;
+  position: sticky;
+}
+
+.title-container {
+  width: 100%;
+  color: white;
+  font-family: "Playfair Display";
+  font-size: 4em;
+}
+
+.subtext-container {
+  font-family: "Source Serif 4", serif;
+  font-size: 1.5vw;
+  width: 100%;
+  color: white;
+}
+
+.image-container {
+  width: 40%;
+  height: 80vh;
+  background-color: white;
+}
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide {
+  overflow: hidden;
+  height: 90vh;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subtext-container {
+  width: 70%;
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack the items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text inside the .facts-container */
+}
+
+.facts-container {
+  justify-content: center;
+  width: 100%;
+  font-family: "Playfair Display";
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-size: 1em;
+}
+
+#grey {
+  color: #e3dad4;
+}

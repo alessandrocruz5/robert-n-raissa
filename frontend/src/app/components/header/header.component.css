@@ -71,17 +71,17 @@ header {
   padding: 1.5rem;
   /* background: #e7a4be; */
   background-color: transparent;
-  transition: background-color 0.3s ease;
-  position: fixed;
+  /* transition: background-color 0.3s ease; */
+  position: absolute;
   /* top: -2rem;
   padding-top: 2rem; */
   z-index: 100;
   width: 100%;
 }
 
-header.hide-nav {
+/* header.hide-nav {
   background-color: #e7a4be;
-}
+} */
 
 .navbar-container {
   height: 3rem;
@@ -100,12 +100,10 @@ header.hide-nav {
   list-style-type: none;
   color: white;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
-  padding-right: 1.5%;
-  font-family: "DM Serif Display", serif;
-  text-transform: uppercase;
-  align-items: center;
+  padding-left: 5%;
+  font-family: "Playfair Display";
 }
 
 .desktop-menu ul li:hover {
@@ -116,6 +114,14 @@ header.hide-nav {
 
 .menu-icon {
   display: none;
+}
+
+button {
+  margin-right: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.3em;
+  border: none;
+  font-family: "Playfair Display";
 }
 
 @media screen and (max-width: 1119.98px) {
@@ -133,7 +139,7 @@ header.hide-nav {
     right: -280px;
     transition: 0.4s ease-in-out;
     top: 5rem;
-    background: #ffe8f1;
+    /* background: #ffe8f1; */
     width: 280px;
     height: 100%;
     z-index: 100;
@@ -144,6 +150,9 @@ header.hide-nav {
     text-align: left;
     margin: 0;
     padding: 10px 0 10px 26px;
+  }
+
+  .logo-container {
   }
 
   .menu-icon {

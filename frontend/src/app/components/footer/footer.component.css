@@ -1,33 +1,36 @@
 .section-container {
-  padding: 10rem;
-  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  padding: 5rem;
 }
 
-.title-container {
+.content-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+.links-container {
   width: 100%;
-  padding-bottom: 1rem;
-  z-index: 100;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
 }
 
-.title-container h1 {
-  font-size: 4vw;
-  font-family: "DM Serif Display", serif;
-  color: #e1c565;
-  z-index: 100;
+.links-container a {
+  text-decoration: none;
+  color: white;
 }
 
-.contacts-container {
-  width: 100%;
-  height: 100%;
-  padding-top: 1rem;
-  z-index: 100;
-}
-
-.contacts-content-container {
-  width: 100%;
-  height: 20rem;
+.image-container {
+  width: 40%;
+  height: 40vh;
+  margin-top: 3.5rem;
   background-color: white;
-  z-index: 100;
 }
 
 @media screen and (max-width: 479.98px) {

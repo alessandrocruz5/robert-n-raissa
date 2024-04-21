@@ -58,7 +58,24 @@
 <header>
   <div id="navbar" class="navbar-container">
     <div class="row">
-      <div class="col-md-3 col-sm-3 col-3">
+      <div class="col-sm align-baseline">
+        <div class="desktop-menu" [class.mobile-menu]="menuValue">
+          <ul>
+            <li>Wedding</li>
+            <li>About Us</li>
+            <li>Registry</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm text-center">
+        <div class="logo-container">
+          <img src="" alt="R&R" class="logo" />
+        </div>
+      </div>
+      <div class="col-sm text-end">
+        <button>RSVP</button>
+      </div>
+      <!-- <div class="col-md-3 col-sm-3 col-3">
         <div class="logo-container">
           <img src="" alt="R&R" class="logo" />
         </div>
@@ -78,7 +95,7 @@
             <li (click)="closeMenu(); toContact()">Contact</li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </header>

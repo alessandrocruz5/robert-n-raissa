@@ -1,3 +1,43 @@
-.carousel-container {
-  padding-bottom: 5rem;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display";
+  color: white;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  filter: brightness(65%);
+}
+
+.subtext-container {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+}
+
+.subtext-container h2 {
+  font-size: 4em;
+}
+
+#wed-date {
+  top: 68%;
+}
+
+#wed-date h3 {
+  font-size: 3em;
+}
+
+.title-container {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.title-container h1 {
+  font-size: 12em;
 }
