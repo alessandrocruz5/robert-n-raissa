@@ -58,7 +58,7 @@
   .content-container {
     padding: 0.5rem 3rem;
     position: absolute;
-    transform: translateY(45%);
+    transform: translateY(20%);
     z-index: 10;
   }
 
@@ -73,7 +73,7 @@
   }
 
   .image-container {
-    height: 75vh;
+    height: 80vh;
     padding: 0;
   }
 
