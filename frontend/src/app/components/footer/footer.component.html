@@ -1,13 +1,13 @@
 <div class="section-container">
   <div class="content-container">
     <div class="links-container">
-      <a href="#">Wedding</a>
-      <a href="#">About Us</a>
-      <a href="#">Registry</a>
-      <a href="#">RSVP</a>
+      <button (click)="toLocation()">Wedding</button>
+      <button (click)="toAboutUs()">About Us</button>
+      <button (click)="toRegistry()">Registry</button>
+      <button (click)="goToRsvpForm()">RSVP</button>
     </div>
     <div class="image-container">
-      <img src="/" alt="R&R Logo" />
+      <img (click)="toLanding()" src="/" alt="R&R Logo" />
     </div>
   </div>
 </div>

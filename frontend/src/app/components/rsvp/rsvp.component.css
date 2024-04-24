@@ -1,6 +1,4 @@
 .section-container {
-  margin-top: 10rem;
-  padding: 6rem;
   z-index: 10;
   text-align: center;
   background: white;
@@ -8,21 +6,20 @@
 
 .content-container {
   width: 100%;
-  height: 70vh;
+  height: 27.3vh;
 }
 
 .image-container {
-  position: relative;
   width: 100%;
   overflow: hidden;
-  height: 100%;
+  position: relative;
 }
 
 .image-container img {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -50%); */
   object-fit: cover;
   width: 100%;
   filter: brightness(65%);
@@ -30,32 +27,31 @@
 
 .title-container {
   width: 100%;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 33%;
   color: white;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .title-container h1 {
-  font-size: 3.5em;
+  font-size: 3vw;
 }
 
-.title-container button {
-  margin-top: 1rem;
-  padding: 1rem 2rem;
+.button-container {
   position: absolute;
-  font-size: 1.3em;
-  top: 70%;
+  width: 100%;
+  font-size: 1.1w;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30%;
 }
 
-.button-container .form-container {
+.button-container button {
+  font-family: "Playfair Display", serif;
+}
+
+/* .button-container .form-container {
   padding-top: 2rem;
   width: 100%;
   height: 100%;
@@ -72,7 +68,7 @@
   text-align: center;
   margin: auto;
   z-index: 10;
-}
+} */
 
 /* .form-fields-container {
   display: flex;
@@ -134,33 +130,49 @@ iframe {
   z-index: 10;
 }
 
-@media screen and (max-width: 479.98px) {
+@media screen and (min-width: 128px) {
   .section-container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 3rem;
   }
 
-  .title-container {
-    padding-bottom: 0.2rem;
+  .content-container {
+    height: 60vh;
+  }
+
+  .image-container {
+    height: 60vh;
+  }
+
+  .image-container img {
+    height: 60vh;
+    object-fit: cover;
+    object-position: 40% center;
+  }
+
+  /* .title-container,
+  .button-container {
     position: relative;
-    transform: translate(0, 0);
+    display: flex;
     text-align: center;
+    justify-content: center;
+  } */
+
+  .title-container {
+    top: 15%;
   }
 
   .title-container h1 {
-    font-family: "DM Serif Display", serif;
-    font-size: 9vw;
+    font-size: 5vw;
   }
 
-  .form-container {
-    width: 100%;
-    padding-top: 2rem;
+  .button-container button {
+    font-size: 4vw;
+    border: none;
+    padding: 0.5rem 1rem;
   }
 
-  .form-content-container {
-    width: 100%;
-    height: 100em;
+  .title-container h1 {
+    /* font-family: "Playfair Display"; */
+    font-size: 5vw;
   }
 }
