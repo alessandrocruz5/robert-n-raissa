@@ -34,9 +34,8 @@
 
 .image-container {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   /* margin-top: 3.5rem; */
-  background-color: white;
 }
 
 .img-container img:hover {
@@ -45,20 +44,38 @@
 
 @media screen and (min-width: 128px) {
   .section-container {
-    padding: 3rem;
+  }
+
+  .footer-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .footer-container img {
+    height: 70vh;
+    object-fit: cover;
   }
 
   .links-container {
-    font-size: 6vw;
+    font-size: 5.5vw;
+    position: absolute;
+    transform: translateY(30%);
   }
 
   .links-container button {
-    width: 40%;
-    margin: 0.2rem;
+    width: 100%;
   }
 
   .image-container {
     margin-top: 2rem;
     width: 85%;
+    position: absolute;
+    transform: translateY(60%);
+  }
+
+  .image-container img {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 }

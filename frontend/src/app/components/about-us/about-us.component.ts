@@ -8,11 +8,11 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 })
 export class AboutUsComponent {
   slides = [
-    { img: 'assets/images/welcome.jpg' },
-    { img: 'assets/images/R&I_351.JPG' },
-    { img: 'assets/images/R&I_050 (1).JPG' },
-    { img: 'assets/images/R&I_163.JPG' },
-    { img: 'assets/images/R&I_446.JPG' },
+    { img: 'assets/images/facts/facts-1.jpg' },
+    { img: 'assets/images/facts/facts-2.jpg' },
+    { img: 'assets/images/facts/facts-3.jpg' },
+    { img: 'assets/images/facts/facts-4.jpg' },
+    { img: 'assets/images/facts/facts-5.jpg' },
   ];
 
   // { img: 'assets/images/5 hd.jpg' },

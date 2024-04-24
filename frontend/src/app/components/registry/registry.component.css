@@ -1,5 +1,6 @@
 .section-container {
   padding-top: 8rem;
+  position: relative;
 }
 
 .content-container {
@@ -22,7 +23,7 @@
 
 .image-container {
   width: 100%;
-  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,11 +53,13 @@
 
 @media screen and (min-width: 128px) {
   .section-container {
-    margin-bottom: 28rem;
   }
 
   .content-container {
     padding: 0.5rem 3rem;
+    position: absolute;
+    transform: translateY(45%);
+    z-index: 10;
   }
 
   .title-container {
@@ -75,22 +78,30 @@
   }
 
   .image-container img {
-    object-position: 53.7% center;
+    object-position: 51% center;
+    filter: brightness(65%);
   }
 
   .shapes-container {
-    display: grid;
+    display: block;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0;
+    column-gap: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
-    transform: translateY(67%);
+    position: static;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
-  .qr {
-    width: 50vw;
-    margin: auto;
-    padding: 0.5rem;
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
+
+  .shapes-container img {
+    height: 50vh;
   }
 }

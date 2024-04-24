@@ -62,6 +62,22 @@
   background-color: #8a905f;
 }
 
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide {
+  overflow: hidden;
+  height: 50vh;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*.circle {
   background-color: #a7a995;
 } */
@@ -79,7 +95,11 @@
     width: 100%;
     height: 50vh;
     position: static;
-    background-color: grey;
+    background-color: white;
+  }
+
+  .slide img {
+    filter: brightness(65%);
   }
 
   .content-container {

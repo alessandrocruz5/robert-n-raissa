@@ -136,17 +136,18 @@ iframe {
   }
 
   .content-container {
-    height: 60vh;
+    height: 80vh;
   }
 
   .image-container {
-    height: 60vh;
+    height: 80vh;
+    transform: translateY(12%);
   }
 
   .image-container img {
     height: 60vh;
     object-fit: cover;
-    object-position: 40% center;
+    object-position: 45% center;
   }
 
   /* .title-container,
