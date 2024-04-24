@@ -57,8 +57,30 @@
 </nav> -->
 <header>
   <div id="navbar" class="navbar-container">
-    <div class="row">
-      <div class="col-md-3 col-sm-3 col-3">
+    <div class="link-container">
+      <div class="desktop-menu" [class.mobile-menu]="menuValue">
+        <ul>
+          <li (click)="toLocation(); closeMenu()">Wedding</li>
+          <li (click)="toAboutUs(); closeMenu()">About Us</li>
+          <li (click)="toRegistry(); closeMenu()">Registry</li>
+        </ul>
+      </div>
+    </div>
+    <div class="logo-container">
+      <img src="assets/images/logo/Header logo.png" alt="R&R" class="logo" />
+    </div>
+    <div class="icon-container text-end">
+      <div class="menu-icon">
+        <i class="{{ menuIcon }}" (click)="toggleMenu()"></i>
+      </div>
+    </div>
+    <div class="rsvp-menu" [class.mobile-menu]="menuValue">
+      <button (click)="goToRsvpForm()">RSVP</button>
+    </div>
+  </div>
+</header>
+
+<!-- <div class="col-md-3 col-sm-3 col-3">
         <div class="logo-container">
           <img src="" alt="R&R" class="logo" />
         </div>
@@ -78,7 +100,4 @@
             <li (click)="closeMenu(); toContact()">Contact</li>
           </ul>
         </div>
-      </div>
-    </div>
-  </div>
-</header>
+      </div> -->

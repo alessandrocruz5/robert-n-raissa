@@ -1,8 +1,20 @@
 <div class="section-container">
-  <div class="title-container">
-    <h1>Contact Information</h1>
-  </div>
-  <div class="contacts-container">
-    <div class="contacts-content-container"></div>
+  <div class="content-container">
+    <div class="footer-container">
+      <img src="assets/images/footer.jpg" alt="footer" />
+    </div>
+    <div class="links-container">
+      <button (click)="toLocation()">Wedding</button>
+      <button (click)="toAboutUs()">About Us</button>
+      <button (click)="toRegistry()">Registry</button>
+      <button (click)="goToRsvpForm()">RSVP</button>
+    </div>
+    <div class="image-container">
+      <img
+        (click)="toLanding()"
+        src="/assets/images/logo/Footer logo.png"
+        alt="R&R Logo"
+      />
+    </div>
   </div>
 </div>

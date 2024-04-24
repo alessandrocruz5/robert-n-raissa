@@ -1,3 +1,92 @@
-.carousel-container {
-  padding-bottom: 5rem;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  filter: brightness(65%);
+}
+
+.subtext-container {
+  position: absolute;
+  width: 100%;
+  /* transform: translateY(25%); */
+}
+
+.date-container {
+  position: absolute;
+  width: 100%;
+}
+
+.subtext-container h2 {
+  font-size: 3.5vw;
+}
+
+#wed-date {
+  top: 68%;
+}
+
+#wed-date h3 {
+  font-size: 2.5vw;
+}
+
+.title-container {
+  position: absolute;
+  /* top: 40%;*/
+  width: 100%;
+}
+
+.title-container h1 {
+  font-size: 10vw;
+}
+
+@media screen and (min-width: 128px) {
+  .image-container {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .image-container img {
+    height: 70vh;
+    object-fit: cover;
+    object-position: 75%;
+  }
+
+  .subtext-container {
+    /* transform: translateY(-1600%); */
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subtext-container h2 {
+    font-size: 4.5vw;
+  }
+
+  .title-container {
+    top: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .date-container {
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .date-container h3 {
+    font-size: 3.5vw;
+  }
 }

@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { NgHeroiconsModule } from '@dimaslz/ng-heroicons';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 import { CarouselModule } from 'primeng/carousel';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -32,6 +34,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
 import { BackgroundComponent } from './components/background/background.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ScrollDirective } from './directives/scroll.directive';
 
 @NgModule({
   declarations: [
@@ -47,6 +51,8 @@ import { BackgroundComponent } from './components/background/background.componen
     LandingComponent,
     SplashScreenComponent,
     BackgroundComponent,
+    AboutUsComponent,
+    ScrollDirective,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -69,6 +75,7 @@ import { BackgroundComponent } from './components/background/background.componen
     HttpClientModule,
     NgHeroiconsModule,
     MatIconModule,
+    SlickCarouselModule,
   ],
 })
 export class AppModule {}

@@ -1,4 +1,4 @@
-<div class="section-container">
+<!-- <div class="section-container">
   <div class="content-container-1">
     <div class="title-container">
       <h1>Location</h1>
@@ -25,6 +25,43 @@
           loading="lazy"
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyABWyB2mUkkQ1HLHo9KcmP7dZtydc8xZMM&q=Balay+Dako,Tagaytay+Cavite"
         ></iframe>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="section-container">
+  <div class="image-container">
+    <ngx-slick-carousel
+      class="carousel"
+      #slickModal="slick-carousel"
+      [config]="slideConfig"
+    >
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" alt="" class="img-style" /></div
+    ></ngx-slick-carousel>
+  </div>
+  <div class="content-container">
+    <div id="ceremony" class="location-container">
+      <div class="title-container"><strong>Ceremony</strong></div>
+      <div class="subtext-container">St. Benedict Parish - Westgrove</div>
+      <div id="second-line" class="subtext-container">1:30PM</div>
+    </div>
+    <div id="reception" class="location-container">
+      <div class="title-container"><strong>Reception</strong></div>
+      <div class="subtext-container">Balay Dako, Tagaytay</div>
+      <div id="second-line" class="subtext-container">5:00PM</div>
+    </div>
+    <div id="attire" class="location-container">
+      <div class="title-container"><strong>Attire</strong></div>
+      <div class="subtext-container">Formal or Black Tie Optional</div>
+      <div id="second-line" class="subtext-container">in colors</div>
+      <div class="shape-container">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+        <div class="circle-5"></div>
       </div>
     </div>
   </div>

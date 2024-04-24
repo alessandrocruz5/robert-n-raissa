@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { RsvpService } from 'src/app/services/rsvp.service';
 
 @Component({
   selector: 'app-header',
@@ -19,7 +20,7 @@ export class HeaderComponent {
 
   @ViewChild('entourage') entourage: ElementRef;
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private rsvp: RsvpService) {}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -40,8 +41,8 @@ export class HeaderComponent {
     this.menuIcon = 'bi bi-list';
   }
 
-  toWelcome() {
-    document.getElementsByClassName('welcome')[0].scrollIntoView({
+  toLanding() {
+    document.getElementsByClassName('landing')[0].scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
@@ -87,5 +88,16 @@ export class HeaderComponent {
       behavior: 'smooth',
       block: 'start',
     });
+  }
+
+  toAboutUs() {
+    document.getElementsByClassName('about-us')[0].scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
+  goToRsvpForm() {
+    this.rsvp.goToRsvpForm();
   }
 }
