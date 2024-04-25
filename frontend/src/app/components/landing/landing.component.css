@@ -90,3 +90,43 @@ h3 {
     font-size: 3.5vw;
   }
 }
+
+@media screen and (min-width: 650px) {
+  .date-container {
+    top: 33%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .image-container {
+    height: 90vh;
+  }
+
+  .image-container img {
+    height: 90vh;
+  }
+
+  .title-container {
+    top: 29%;
+  }
+
+  .title-container h1 {
+    font-size: 8vw;
+  }
+
+  .subtext-container {
+    top: 20%;
+  }
+
+  .subtext-container h2 {
+    font-size: 3.7vw;
+  }
+
+  .date-container {
+    top: 43%;
+  }
+
+  .date-container h3 {
+    font-size: 2.7vw;
+  }
+}

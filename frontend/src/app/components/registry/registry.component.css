@@ -53,6 +53,7 @@
 
 @media screen and (min-width: 128px) {
   .section-container {
+    padding: 4rem 0;
   }
 
   .content-container {
@@ -64,12 +65,12 @@
 
   .title-container {
     font-size: 6vw;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .message-container {
     font-size: 4vw;
-    padding-bottom: 2.5rem;
+    padding: 2.2rem;
   }
 
   .image-container {
@@ -99,6 +100,31 @@
     justify-content: center;
     align-items: center;
     margin: 2rem;
+  }
+
+  .shapes-container img {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .image-container img {
+    object-position: 50% center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .title-container {
+    font-size: 4vw;
+  }
+
+  .message-container {
+    font-size: 2.4vw;
+    padding: 3rem;
+  }
+
+  .shapes-container {
+    display: grid;
   }
 
   .shapes-container img {

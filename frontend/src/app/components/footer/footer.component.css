@@ -12,6 +12,10 @@
   align-items: center; /* Center horizontally */
 }
 
+.footer-container {
+  background-image: url("/assets/images/footer.jpg");
+}
+
 .links-container {
   width: 100%;
   text-align: center;
@@ -48,19 +52,11 @@
 
   .footer-container {
     width: 100%;
-    position: relative;
-  }
-
-  .footer-container img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
   }
 
   .links-container {
     font-size: 5.5vw;
-    position: absolute;
-    transform: translateY(30%);
+    margin-top: 3rem;
   }
 
   .links-container button {
@@ -69,14 +65,44 @@
 
   .image-container {
     margin-top: 2rem;
-    width: 85%;
-    position: absolute;
-    transform: translateY(60%);
-  }
-
-  .image-container img {
+    /* height: 100%; */
     width: 100%;
     text-align: center;
     justify-content: center;
+    margin-bottom: 10rem;
+  }
+
+  .image-container img {
+    width: 55%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .links-container {
+    font-size: 3.7vw;
+  }
+
+  .image-container {
+    margin-bottom: 12rem;
+  }
+
+  .image-container img {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .links-container {
+    font-size: 2.2v;
+  }
+
+  .image-container {
+    margin-bottom: 8rem;
+  }
+
+  .image-container img {
+    width: 28%;
   }
 }

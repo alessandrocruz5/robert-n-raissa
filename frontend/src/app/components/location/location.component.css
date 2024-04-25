@@ -93,12 +93,17 @@
 
   .image-container {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     position: static;
     background-color: white;
   }
 
+  .slide {
+    height: 60vh;
+  }
+
   .slide img {
+    height: 60vh;
     filter: brightness(65%);
   }
 
@@ -159,4 +164,66 @@
     border-radius: 50%;
     margin: 0 0.5rem;
   }
+}
+
+@media screen and (min-width: 650px) {
+  .image-container {
+    height: 70vh;
+  }
+
+  .slide {
+    height: 70vh;
+  }
+
+  .slide img {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section-container {
+    flex-direction: row;
+    padding: 4rem 0;
+  }
+
+  .content-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location-container {
+    position: static;
+    width: 100%;
+  }
+
+  .slide img {
+    filter: brightness(100%);
+  }
+
+  .image-container {
+    width: 60%;
+  }
+
+  .title-container {
+    font-size: 3.5vw;
+  }
+
+  .subtext-container {
+    font-size: 2.3vw;
+  }
+
+  /* #ceremony {
+    top: 15%;
+  }
+
+  #reception {
+    top: 40%;
+  }
+
+  #attire {
+    top: 65%;
+  } */
 }

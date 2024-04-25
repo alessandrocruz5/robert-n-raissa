@@ -192,3 +192,74 @@ button {
     font-size: 3vw;
   }
 }
+
+@media screen and (min-width: 650px) {
+  .menu-icon {
+    font-size: 7vw;
+  }
+
+  .logo-container img {
+    width: 50%;
+  }
+
+  .rsvp-menu {
+    top: 550px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .icon-container {
+    display: none;
+  }
+
+  .logo-container {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-container img {
+    width: 50%;
+  }
+
+  .navbar-container {
+    width: 100%;
+  }
+
+  .desktop-menu {
+    position: static;
+    background: transparent;
+  }
+
+  .link-container {
+    position: static;
+    width: 40%;
+    padding: 1rem 2rem;
+  }
+
+  .desktop-menu ul {
+    transform: translateY(0%);
+  }
+
+  .desktop-menu ul li {
+    font-size: 2vw;
+    display: inline-block;
+  }
+
+  .rsvp-menu {
+    position: static;
+    width: 40%;
+    background: transparent;
+    display: block;
+    justify-content: initial;
+    align-items: initial;
+  }
+
+  .rsvp-menu button {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 2vw;
+    float: right;
+  }
+}

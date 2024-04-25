@@ -177,3 +177,39 @@ iframe {
     font-size: 5vw;
   }
 }
+
+@media screen and (min-width: 650px) {
+  .image-container img {
+    object-position: 40% center;
+  }
+
+  .title-container {
+    top: 10%;
+  }
+
+  .button-container {
+    top: 20%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section-container {
+    padding: 4rem 0;
+  }
+
+  .title-container {
+    top: 5%;
+  }
+
+  .title-container h1 {
+    font-size: 3.7vw;
+  }
+
+  .button-container {
+    top: 16%;
+  }
+
+  .button-container button {
+    font-size: 2.4vw;
+  }
+}
