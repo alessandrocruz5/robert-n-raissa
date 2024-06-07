@@ -131,3 +131,64 @@
     height: 50vh;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .content-container {
+    position: static;
+    transform: translate(0%);
+  }
+
+  .section-container {
+    padding-bottom: 10rem;
+  }
+
+  .title-container {
+    font-size: 4.4vw;
+  }
+
+  .message-container {
+    font-size: 2.6vw;
+    padding: 2rem 4.5rem;
+  }
+
+  .shapes-container {
+    position: absolute;
+    display: flex;
+    top: 75%;
+  }
+
+  .grid-item {
+    margin: 0;
+  }
+
+  .grid-item img {
+    margin: 0;
+    height: 46vh;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .section-container {
+    padding-bottom: 15rem;
+  }
+
+  .image-container img {
+    height: 90vh;
+  }
+
+  .grid-item img {
+    height: 59vh;
+  }
+
+  .content-container {
+    padding: 5rem 13rem;
+  }
+
+  .title-container {
+    font-size: 2.8vw;
+  }
+
+  .message-container {
+    font-size: 1.4vw;
+  }
+}

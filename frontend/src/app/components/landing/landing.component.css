@@ -1,7 +1,9 @@
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-weight: 300;
+
   color: white;
 }
 
@@ -18,7 +20,6 @@ h3 {
 .subtext-container {
   position: absolute;
   width: 100%;
-  /* transform: translateY(25%); */
 }
 
 .date-container {
@@ -128,5 +129,40 @@ h3 {
 
   .date-container h3 {
     font-size: 2.7vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .image-container {
+    height: 100vh;
+  }
+
+  .image-container {
+    height: 120vh;
+  }
+
+  .image-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .title-container {
+    top: 38%;
+  }
+
+  .title-container h1 {
+    font-size: 6vw;
+  }
+
+  .subtext-container h2 {
+    font-size: 3vw;
+  }
+
+  .date-container h3 {
+    font-size: 2vw;
+  }
+
+  .date-container {
+    top: 55%;
   }
 }

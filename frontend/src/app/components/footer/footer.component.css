@@ -46,6 +46,15 @@
   cursor: pointer;
 }
 
+.signature-container {
+  font-family: "Playfair Display", serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
 @media screen and (min-width: 128px) {
   .section-container {
   }
@@ -77,6 +86,10 @@
     text-align: center;
     justify-content: center;
   }
+
+  .signature-container {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -105,4 +118,47 @@
   .image-container img {
     width: 28%;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .links-container {
+    font-size: 1.8vw;
+  }
+
+  .image-container {
+    margin-bottom: 6rem;
+  }
+
+  .image-container img {
+    width: 22%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .section-container {
+    height: 100vh;
+  }
+
+  .footer-container {
+    height: 100vh;
+  }
+
+  .links-container {
+    font-size: 2vw;
+  }
+
+  .image-container {
+    margin-bottom: 10rem;
+  }
+
+  .image-container img {
+    width: 27%;
+  }
+
+  .signature-container {
+    margin-top: 13rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
 }

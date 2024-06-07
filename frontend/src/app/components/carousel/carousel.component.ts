@@ -17,8 +17,6 @@ export class CarouselComponent {
     { img: 'assets/images/4 hd.jpg' },
   ];
 
-  // { img: 'assets/images/5 hd.jpg' },
-
   slideConfig = {
     slidesToShow: 1,
     slidesToScroll: 1,

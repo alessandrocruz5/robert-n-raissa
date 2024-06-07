@@ -15,8 +15,6 @@ export class AboutUsComponent {
     { img: 'assets/images/facts/facts-5.jpg' },
   ];
 
-  // { img: 'assets/images/5 hd.jpg' },
-
   slideConfig = {
     slidesToShow: 1,
     slidesToScroll: 1,
