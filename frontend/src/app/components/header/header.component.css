@@ -123,6 +123,7 @@ button {
     font-size: 3vw;
   }
 }
+<<<<<<< HEAD
 
 @media screen and (min-width: 650px) {
   .menu-icon {
@@ -216,3 +217,5 @@ button {
     font-size: 1.7vw;
   }
 }
+=======
+>>>>>>> parent of 4bc4a09 (Mobile and Tablet responsiveness)

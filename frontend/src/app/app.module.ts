@@ -21,9 +21,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
-import { EntourageComponent } from './components/entourage/entourage.component';
-import { DressCodeComponent } from './components/dress-code/dress-code.component';
 import { LocationComponent } from './components/location/location.component';
 import { RegistryComponent } from './components/registry/registry.component';
 import { RsvpComponent } from './components/rsvp/rsvp.component';
@@ -32,8 +29,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingComponent } from './components/landing/landing.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
-import { BackgroundComponent } from './components/background/background.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ScrollDirective } from './directives/scroll.directive';
 
@@ -41,16 +36,11 @@ import { ScrollDirective } from './directives/scroll.directive';
   declarations: [
     AppComponent,
     HeaderComponent,
-    WelcomeComponent,
-    EntourageComponent,
-    DressCodeComponent,
     LocationComponent,
     RegistryComponent,
     RsvpComponent,
     FooterComponent,
     LandingComponent,
-    SplashScreenComponent,
-    BackgroundComponent,
     AboutUsComponent,
     ScrollDirective,
   ],

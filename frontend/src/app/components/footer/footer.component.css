@@ -12,10 +12,6 @@
   align-items: center; /* Center horizontally */
 }
 
-.footer-container {
-  background-image: url("/assets/images/footer.jpg");
-}
-
 .links-container {
   width: 100%;
   text-align: center;
@@ -61,11 +57,19 @@
 
   .footer-container {
     width: 100%;
+    position: relative;
+  }
+
+  .footer-container img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
   }
 
   .links-container {
     font-size: 5.5vw;
-    margin-top: 3rem;
+    position: absolute;
+    transform: translateY(30%);
   }
 
   .links-container button {
@@ -74,10 +78,16 @@
 
   .image-container {
     margin-top: 2rem;
-    /* height: 100%; */
+    width: 85%;
+    position: absolute;
+    transform: translateY(60%);
+  }
+
+  .image-container img {
     width: 100%;
     text-align: center;
     justify-content: center;
+<<<<<<< HEAD
     margin-bottom: 10rem;
   }
 
@@ -117,6 +127,8 @@
 
   .image-container img {
     width: 28%;
+=======
+>>>>>>> parent of 4bc4a09 (Mobile and Tablet responsiveness)
   }
 }
 

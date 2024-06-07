@@ -91,6 +91,7 @@ iframe {
     font-size: 5vw;
   }
 }
+<<<<<<< HEAD
 
 @media screen and (min-width: 650px) {
   .image-container img {
@@ -200,3 +201,5 @@ iframe {
     padding: 1rem 1.5rem;
   }
 }
+=======
+>>>>>>> parent of 4bc4a09 (Mobile and Tablet responsiveness)

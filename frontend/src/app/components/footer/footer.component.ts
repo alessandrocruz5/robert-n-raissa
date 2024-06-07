@@ -15,7 +15,6 @@ export class FooterComponent {
       block: 'start',
     });
   }
-
   toLocation() {
     document.getElementsByClassName('location')[0].scrollIntoView({
       behavior: 'smooth',
@@ -25,6 +24,13 @@ export class FooterComponent {
 
   toRegistry() {
     document.getElementsByClassName('registry')[0].scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
+  toRSVP() {
+    document.getElementsByClassName('rsvp')[0].scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });

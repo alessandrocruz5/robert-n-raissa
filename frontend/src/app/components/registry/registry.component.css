@@ -53,7 +53,6 @@
 
 @media screen and (min-width: 128px) {
   .section-container {
-    padding: 4rem 0;
   }
 
   .content-container {
@@ -65,12 +64,12 @@
 
   .title-container {
     font-size: 6vw;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .message-container {
     font-size: 4vw;
-    padding: 2.2rem;
+    padding-bottom: 2.5rem;
   }
 
   .image-container {
@@ -106,6 +105,7 @@
     height: 50vh;
   }
 }
+<<<<<<< HEAD
 
 @media screen and (min-width: 650px) {
   .image-container img {
@@ -192,3 +192,5 @@
     font-size: 1.4vw;
   }
 }
+=======
+>>>>>>> parent of 4bc4a09 (Mobile and Tablet responsiveness)
