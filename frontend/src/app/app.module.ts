@@ -28,7 +28,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingComponent } from './components/landing/landing.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarouselComponent } from './components/carousel/carousel.component';
+// import { CarouselComponent } from './components/carousel/carousel.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ScrollDirective } from './directives/scroll.directive';
 
@@ -56,7 +56,6 @@ import { ScrollDirective } from './directives/scroll.directive';
     MatSelectModule,
     CarouselModule,
     NgbModule,
-    CarouselComponent,
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,

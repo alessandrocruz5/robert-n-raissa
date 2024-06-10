@@ -105,7 +105,6 @@
     height: 50vh;
   }
 }
-<<<<<<< HEAD
 
 @media screen and (min-width: 650px) {
   .image-container img {
@@ -192,5 +191,3 @@
     font-size: 1.4vw;
   }
 }
-=======
->>>>>>> parent of 4bc4a09 (Mobile and Tablet responsiveness)
