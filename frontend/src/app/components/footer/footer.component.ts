@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 import { RsvpService } from 'src/app/services/rsvp.service';
 
 @Component({
@@ -7,7 +8,11 @@ import { RsvpService } from 'src/app/services/rsvp.service';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent {
-  constructor(private el: ElementRef, private rsvp: RsvpService) {}
+  constructor(
+    private el: ElementRef,
+    private rsvp: RsvpService,
+    private router: Router
+  ) {}
 
   toLanding() {
     document.getElementsByClassName('landing')[0].scrollIntoView({
@@ -15,12 +20,17 @@ export class FooterComponent {
       block: 'start',
     });
   }
+
   toLocation() {
     document.getElementsByClassName('location')[0].scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
   }
+
+  // toLocation() {
+  //   this.router.navigate(['/location']);
+  // }
 
   toRegistry() {
     document.getElementsByClassName('registry')[0].scrollIntoView({

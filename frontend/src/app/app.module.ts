@@ -31,6 +31,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { CarouselComponent } from './components/carousel/carousel.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ScrollDirective } from './directives/scroll.directive';
+import { LockScreenComponent } from './components/lock-screen/lock-screen.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { ScrollDirective } from './directives/scroll.directive';
     LandingComponent,
     AboutUsComponent,
     ScrollDirective,
+    LockScreenComponent,
+    WelcomeComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
