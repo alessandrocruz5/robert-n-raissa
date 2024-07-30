@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { RsvpService } from 'src/app/services/rsvp.service';
 
 @Component({
@@ -7,28 +7,21 @@ import { RsvpService } from 'src/app/services/rsvp.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  linkColor = '#E1C565';
-
-  scrollTop = 0;
-  scrollOffset = 1000;
-  isSticky: boolean = false;
-
   menuValue: boolean = false;
   menuIcon: string = 'bi bi-list';
 
   yOffset = -10;
 
-  @ViewChild('entourage') entourage: ElementRef;
+  constructor(private rsvp: RsvpService) {}
 
-  constructor(private el: ElementRef, private rsvp: RsvpService) {}
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const dynamicOffset = this.scrollOffset - window.innerHeight * 0.5;
-
-    this.isSticky =
-      (window.scrollY || document.documentElement.scrollTop || 0) >
-      dynamicOffset;
+  scrollToElement(key: string) {
+    const element = document.querySelector(`#${key}`);
+    if (element) {
+      // Adjust this value based on your header height
+      const y =
+        element.getBoundingClientRect().top + window.scrollY + this.yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   }
 
   toggleMenu() {
@@ -39,62 +32,6 @@ export class HeaderComponent {
   closeMenu() {
     this.menuValue = false;
     this.menuIcon = 'bi bi-list';
-  }
-
-  toLanding() {
-    document.getElementsByClassName('landing')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toEntourage() {
-    document.getElementsByClassName('entourage')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toDressCode() {
-    document.getElementsByClassName('dress-code')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toLocation() {
-    document.getElementsByClassName('location')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toRegistry() {
-    document.getElementsByClassName('registry')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toRSVP() {
-    document.getElementsByClassName('rsvp')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toContact() {
-    document.getElementsByClassName('contact')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toAboutUs() {
-    document.getElementsByClassName('about-us')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
   }
 
   goToRsvpForm() {

@@ -18,7 +18,13 @@
   </div>
   <div>
     <div class="lock-screen">
-      <h2>Please enter the password to access the wedding invite</h2>
+      <h2 [@messageChange]="isUnlocked ? 'unlocked' : 'locked'">
+        {{
+          isUnlocked
+            ? message
+            : "Please enter the password to access the wedding invite"
+        }}
+      </h2>
       <input
         type="password"
         [(ngModel)]="password"

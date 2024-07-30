@@ -1,73 +1,3 @@
-// import {
-//   trigger,
-//   transition,
-//   style,
-//   animate,
-//   group,
-//   query,
-// } from '@angular/animations';
-
-// export const fadeOutAnimation = trigger('routeAnimations', [
-//   transition('LockScreenPage => MainContentPage', [
-//     query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-//       optional: true,
-//     }),
-//     group([
-//       query(
-//         ':leave',
-//         [
-//           style({ opacity: 1 }),
-//           animate(
-//             '0.8s ease-in-out',
-//             style({ opacity: 0, transform: 'translateX(-100%)' })
-//           ),
-//         ],
-//         { optional: true }
-//       ),
-//       query(
-//         ':enter',
-//         [
-//           style({ opacity: 0, transform: 'translateX(100%)' }),
-//           animate(
-//             '0.8s ease-in-out',
-//             style({ opacity: 1, transform: 'translateX(0%)' })
-//           ),
-//         ],
-//         { optional: true }
-//       ),
-//     ]),
-//   ]),
-//   transition('MainContentPage => LockScreenPage', [
-//     query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
-//       optional: true,
-//     }),
-//     group([
-//       query(
-//         ':leave',
-//         [
-//           style({ opacity: 1 }),
-//           animate(
-//             '0.8s ease-in-out',
-//             style({ opacity: 0, transform: 'translateX(100%)' })
-//           ),
-//         ],
-//         { optional: true }
-//       ),
-//       query(
-//         ':enter',
-//         [
-//           style({ opacity: 0, transform: 'translateX(-100%)' }),
-//           animate(
-//             '0.8s ease-in-out',
-//             style({ opacity: 1, transform: 'translateX(0%)' })
-//           ),
-//         ],
-//         { optional: true }
-//       ),
-//     ]),
-//   ]),
-// ]);
-
 import {
   trigger,
   transition,
@@ -75,40 +5,8 @@ import {
   animate,
   group,
   query,
+  state,
 } from '@angular/animations';
-
-// export const fadeOutAnimation = trigger('routeAnimations', [
-//   transition('LockScreenComponent => LandingComponent', [
-//     query(':leave', style({ position: 'fixed', width: '100%' }), {
-//       optional: true,
-//     }),
-//     group([
-//       query(
-//         ':leave',
-//         [
-//           style({ opacity: 1 }),
-//           animate('0.5s ease-in-out', style({ opacity: 0 })),
-//         ],
-//         { optional: true }
-//       ),
-//     ]),
-//   ]),
-//   transition('LandingComponent => LockScreenComponent', [
-//     query(':leave', style({ position: 'fixed', width: '100%' }), {
-//       optional: true,
-//     }),
-//     group([
-//       query(
-//         ':leave',
-//         [
-//           style({ opacity: 1 }),
-//           animate('0.5s ease-in-out', style({ opacity: 0 })),
-//         ],
-//         { optional: true }
-//       ),
-//     ]),
-//   ]),
-// ]);
 
 export const fadeOutAnimation = trigger('routeAnimations', [
   transition('LockScreenComponent => LandingComponent', [
@@ -150,5 +48,26 @@ export const fadeOutAnimation = trigger('routeAnimations', [
         { optional: true }
       ),
     ]),
+  ]),
+]);
+
+export const lockScreenAnimation = trigger('messageChange', [
+  state(
+    'locked',
+    style({
+      opacity: 1,
+      transform: 'translateY(0)',
+    })
+  ),
+  state(
+    'unlocked',
+    style({
+      opacity: 1,
+      transform: 'translateY(0)',
+    })
+  ),
+  transition('locked => unlocked', [
+    style({ opacity: 0, transform: 'translateY(-20px)' }),
+    animate('300ms ease-out'),
   ]),
 ]);

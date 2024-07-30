@@ -1,25 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PasswordService } from 'src/app/services/password.service';
-import { fadeOutAnimation } from 'src/app/shared/route-animations';
+import {
+  fadeOutAnimation,
+  lockScreenAnimation,
+} from 'src/app/shared/route-animations';
 
 @Component({
   selector: 'app-lock-screen',
   templateUrl: './lock-screen.component.html',
   styleUrls: ['./lock-screen.component.css'],
-  animations: [fadeOutAnimation],
+  animations: [fadeOutAnimation, lockScreenAnimation],
 })
 export class LockScreenComponent {
   password: string = '';
   message: string = '';
   isUnlocked: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private passwordService: PasswordService
+  ) {}
 
   unlockContent() {
-    const correctPassword = 'UnliRaisForRobert'; // Replace with your actual password
-
-    if (this.password === correctPassword) {
+    if (this.passwordService.unlock(this.password)) {
       this.message = 'Welcome!';
       this.isUnlocked = true;
       setTimeout(() => {
@@ -27,7 +31,9 @@ export class LockScreenComponent {
       }, 1000); // Delay to allow the animation to start
       // this.router.navigate(['/landing']);
     } else {
-      this.message = 'Incorrect password. Please try again.';
+      alert(`hint: it's the wedding hashtag without the hashtag`);
+      this.password = '';
+      this.isUnlocked = false;
     }
   }
 }

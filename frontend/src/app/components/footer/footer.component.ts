@@ -8,49 +8,22 @@ import { RsvpService } from 'src/app/services/rsvp.service';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent {
+  yOffset = -10;
+
   constructor(
     private el: ElementRef,
     private rsvp: RsvpService,
     private router: Router
   ) {}
 
-  toLanding() {
-    document.getElementsByClassName('landing')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toLocation() {
-    document.getElementsByClassName('location')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  // toLocation() {
-  //   this.router.navigate(['/location']);
-  // }
-
-  toRegistry() {
-    document.getElementsByClassName('registry')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toRSVP() {
-    document.getElementsByClassName('rsvp')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
-  toAboutUs() {
-    document.getElementsByClassName('about-us')[0].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+  scrollToElement(key: string) {
+    const element = document.querySelector(`#${key}`);
+    if (element) {
+      // Adjust this value based on your header height
+      const y =
+        element.getBoundingClientRect().top + window.scrollY + this.yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   }
 
   goToRsvpForm() {

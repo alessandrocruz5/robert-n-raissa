@@ -1,10 +1,5 @@
-<!-- <app-header></app-header>
-<app-landing id="landing" class="landing"></app-landing>
-<app-location id="location" class="location"></app-location>
-<app-about-us id="about-us" class="about-us"></app-about-us>
-<app-registry id="registry" class="registry"></app-registry>
-<app-rsvp id="rsvp" class="rsvp"></app-rsvp>
-<app-footer id="footer" class="footer"></app-footer> -->
+<!-- <app-lock-screen *ngIf="passwordService.isScreenLocked()"></app-lock-screen> -->
+
 <div [@routeAnimations]="prepareRoute(outlet)">
   <router-outlet #outlet="outlet"></router-outlet>
 </div>

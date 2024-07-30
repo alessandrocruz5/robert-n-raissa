@@ -201,7 +201,8 @@
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 400px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 400px) and (-webkit-min-device-pixel-ratio: 2) {
   .lock-screen {
     top: 100%;
   }
@@ -313,10 +314,24 @@
 
 @media screen and (min-width: 1400px) {
   .image-container {
-    top: 37rem;
+    top: 30rem;
   }
 
   .image-container img {
-    width: 18vw;
+    width: 15vw;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .lock-screen h2 {
+    font-size: 1.5vw;
+  }
+
+  .image-container {
+    top: 35rem;
+  }
+
+  .image-container img {
+    width: 15vw;
   }
 }

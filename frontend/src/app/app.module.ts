@@ -30,9 +30,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { CarouselComponent } from './components/carousel/carousel.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-import { ScrollDirective } from './directives/scroll.directive';
 import { LockScreenComponent } from './components/lock-screen/lock-screen.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -44,9 +42,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     FooterComponent,
     LandingComponent,
     AboutUsComponent,
-    ScrollDirective,
     LockScreenComponent,
-    WelcomeComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

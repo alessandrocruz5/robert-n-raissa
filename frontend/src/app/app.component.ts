@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { fadeOutAnimation } from './shared/route-animations';
+import { PasswordService } from './services/password.service';
 
 @Component({
   selector: 'app-root',
@@ -33,6 +34,8 @@ export class AppComponent {
       imageAlt: 'r&r5',
     },
   ];
+
+  constructor(public passwordService: PasswordService) {}
 
   prepareRoute(outlet: RouterOutlet) {
     return (

@@ -1,68 +1,11 @@
-<!-- <nav class="navbar">
-  <div class="menu-container">
-    <button (click)="toggleMenu()">
-      <mat-icon [ngStyle]="{ color: '#e1c565', transform: 'scale(1.5)' }">{{
-        isMenuOpen ? "clear" : "view_headline"
-      }}</mat-icon>
-    </button>
-  </div>
-  <div class="section" [class.is-open]="isMenuOpen">
-    <button (click)="toWelcome()"><a routerLink="/welcome">WELCOME</a></button>
-    <button (click)="toEntourage()">
-      <a routerLink="/entourage">ENTOURAGE</a>
-    </button>
-    <button (click)="toDressCode()">
-      <a routerLink="/dress-code">DRESS CODE</a>
-    </button>
-    <button (click)="toLocation()">
-      <a routerLink="/location">LOCATION</a>
-    </button>
-    <button (click)="toRegistry()">
-      <a routerLink="/registry">REGISTRY</a>
-    </button>
-    <button (click)="toRSVP()"><a routerLink="/rsvp-form">RSVP</a></button>
-    <button (click)="toContact()"><a routerLink="/contact">CONTACT</a></button>
-  </div>
-</nav> -->
-
-<!-- <nav class="navbar">
-  <ul>
-    <li class="burger" (click)="toggleMenu()">
-      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
-    </li>
-    <li class="menu" [class.is-open]="isMenuOpen">
-      <button class="menu-item" (click)="toWelcome()">
-        <a routerLink="/welcome">WELCOME</a>
-      </button>
-      <button class="menu-item" (click)="toEntourage()">
-        <a routerLink="/entourage">ENTOURAGE</a>
-      </button>
-      <button class="menu-item" (click)="toDressCode()">
-        <a routerLink="/dress-code">DRESS CODE</a>
-      </button>
-      <button class="menu-item" (click)="toLocation()">
-        <a routerLink="/location">LOCATION</a>
-      </button>
-      <button class="menu-item" (click)="toRegistry()">
-        <a routerLink="/registry">REGISTRY</a>
-      </button>
-      <button class="menu-item" (click)="toRSVP()">
-        <a routerLink="/rsvp-form">RSVP</a>
-      </button>
-      <button class="menu-item" (click)="toContact()">
-        <a routerLink="/contact">CONTACT</a>
-      </button>
-    </li>
-  </ul>
-</nav> -->
 <header>
   <div id="navbar" class="navbar-container">
     <div class="link-container">
       <div class="desktop-menu" [class.mobile-menu]="menuValue">
         <ul>
-          <li (click)="toLocation(); closeMenu()">Wedding</li>
-          <li (click)="toAboutUs(); closeMenu()">About Us</li>
-          <li (click)="toRegistry(); closeMenu()">Registry</li>
+          <li (click)="scrollToElement('location'); closeMenu()">Wedding</li>
+          <li (click)="scrollToElement('about-us'); closeMenu()">About Us</li>
+          <li (click)="scrollToElement('registry'); closeMenu()">Registry</li>
         </ul>
       </div>
     </div>
@@ -75,29 +18,7 @@
       </div>
     </div>
     <div class="rsvp-menu" [class.mobile-menu]="menuValue">
-      <button (click)="goToRsvpForm()">RSVP</button>
+      <button>RSVP</button>
     </div>
   </div>
 </header>
-
-<!-- <div class="col-md-3 col-sm-3 col-3">
-        <div class="logo-container">
-          <img src="" alt="R&R" class="logo" />
-        </div>
-      </div>
-      <div class="col-md-9 col-sm-9 col-9 text-end">
-        <div class="menu-icon">
-          <i class="{{ menuIcon }}" (click)="toggleMenu()"></i>
-        </div>
-        <div class="desktop-menu" [class.mobile-menu]="menuValue">
-          <ul>
-            <li (click)="closeMenu(); toWelcome()">Welcome</li>
-            <li (click)="closeMenu(); toEntourage()">Entourage</li>
-            <li (click)="closeMenu(); toDressCode()">Dress Code</li>
-            <li (click)="closeMenu(); toLocation()">Location</li>
-            <li (click)="closeMenu(); toRegistry()">Registry</li>
-            <li (click)="closeMenu(); toRSVP()">RSVP</li>
-            <li (click)="closeMenu(); toContact()">Contact</li>
-          </ul>
-        </div>
-      </div> -->
